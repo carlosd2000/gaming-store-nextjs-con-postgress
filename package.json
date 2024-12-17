@@ -9,19 +9,22 @@
     "lint": "next lint"
   },
   "dependencies": {
-  "next": "15.0.3",
-  "pg": "^8.13.1",
-  "react": "^18.2.0",
-  "react-dom": "^18.2.0",
-  "react-responsive-carousel": "^3.2.23",
-  "sweetalert2": "^11.14.5"
-}
-,
+    "next": "15.0.3",
+    "pg": "^8.13.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-responsive-carousel": "^3.2.23",
+    "sharp": "^0.33.5",
+    "sweetalert2": "^11.14.5"
+  },
   "devDependencies": {
     "@types/node": "^20",
     "@types/pg": "^8.11.10",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "typescript": "^5"
+  },
+  "optionalDependencies": {
+    "sharp": "^0.30.0"
   }
 }
