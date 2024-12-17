@@ -1,0 +1,72 @@
+/* Estilos específicos para la página de ayuda */
+.content-container {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 120px auto 0 auto; /* Añadir margen superior de 120 píxeles */
+  }
+  
+  .help-content {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .faq-section, .contact-section, .return-home {
+    margin-bottom: 2rem;
+  }
+  
+  .contact-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .contact-section label {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .contact-section input,
+  .contact-section textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-section input:focus,
+  .contact-section textarea:focus {
+    border-color: #0072ff;
+  }
+  
+  .contact-section button, .return-home button {
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    border: none;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .contact-section button:hover, .return-home button:hover {
+    background: linear-gradient(90deg, #ff7eb3, #ff758c);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(255, 117, 140, 0.3);
+  }
+  
+  .return-home {
+    display: flex;
+    justify-content: center; /* Centrando el botón */
+  }
+  
+  .return-home .button, .contact-section button {
+    width: 100%; /* Asegurar que ambos botones sean del mismo tamaño */
+  }
+  

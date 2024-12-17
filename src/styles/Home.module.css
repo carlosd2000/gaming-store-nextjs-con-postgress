@@ -1,0 +1,252 @@
+/* Estilos globales */
+.body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Barra de navegación */
+.navbar {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 1rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+
+.logoContainer .logo {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.searchContainer {
+  flex-grow: 1;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.searchBar {
+  display: flex;
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.searchBar input {
+  border: none;
+  padding: 0.5rem;
+  flex-grow: 1;
+  outline: none;
+}
+
+.searchBar button {
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.searchBar button:hover {
+  background: linear-gradient(90deg, #ff7eb3, #ff758c);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(255, 117, 140, 0.3);
+}
+
+/* Botones de navegación */
+.rightIcons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.loginButton,
+.shoppingCartIcon {
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.loginButton:hover,
+.shoppingCartIcon:hover {
+  background: linear-gradient(90deg, #ff7eb3, #ff758c);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(255, 117, 140, 0.3);
+}
+
+/* Contenedor de los botones */
+.contenedor1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 1rem;
+  width: 100%;
+  position: fixed;
+  top: 134px; /* Asegura que el contenedor esté debajo de la navbar */
+  z-index: 99;
+}
+
+.botones {
+  display: flex;
+  gap: 1rem;
+}
+
+.button {
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.botones .button:hover {
+  background: linear-gradient(90deg, #ff7eb3, #ff758c);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(255, 117, 140, 0.3);
+}
+
+/* Estilos para la lista de productos */
+.productoList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Contenedor de la tarjeta de producto */
+.productoCard {
+  width: 250px; /* Ancho fijo para las tarjetas */
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #010101c4;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+  cursor: pointer;
+  margin-top: 30px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centro horizontalmente */
+}
+
+/* Efecto de zoom y sombra al pasar el ratón */
+.productoCard:hover {
+  transform: translateY(-10px); /* Mueve la tarjeta hacia arriba */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+}
+
+/* Estilo de la imagen del producto */
+.productoImage {
+  width: 100%; /* Ajusta el ancho al 100% del contenedor */
+  height: 300px; /* Altura fija */
+  object-fit: cover; /* Mantiene la relación de aspecto y recorta la imagen si es necesario */
+  border-bottom: 3px solid #af0909; /* Línea separadora entre la imagen y el texto */
+  transition: transform 0.3s ease; /* Transición para el efecto hover */
+}
+
+/* Efecto de zoom en la imagen */
+.productoCard:hover .productoImage {
+  transform: scale(1.1); /* Escala la imagen al pasar el ratón */
+}
+
+/* Estilos para el título y valor */
+.productoCard h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  font-weight: bold;
+  color: #da0c0c;
+  text-align: center;
+}
+
+/* Estilo para el texto de valor */
+.productoCard p {
+  font-size: 1rem;
+  color: #cb2121;
+  text-align: center;
+}
+
+@media(min-width: 1281px) {
+  .productoList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 94px;
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+}
+
+/* Estilo específico para el título */
+.tituloProductos {
+  margin-top: 300px;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  background: -webkit-linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textGradient 5s ease infinite;
+  text-align: center; /* Centramos el texto */
+}
+
+/* Estilo para los botones */
+.boton {
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  border: none;
+  padding: 1rem 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 60px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boton:hover {
+  background: linear-gradient(90deg, #ff7eb3, #ff758c);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(255, 117, 140, 0.3);
+}
+
+.boton:active {
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+/* Contenedor para centrar los elementos */
+.centrado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
