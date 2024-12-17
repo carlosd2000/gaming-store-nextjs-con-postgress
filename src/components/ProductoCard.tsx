@@ -1,8 +1,10 @@
 import React from "react"; 
 import Swal from "sweetalert2"; 
-import { Producto } from "../types/Producto";
+
 import styles from '../styles/Home.module.css';
 
+
+export interface Producto { id: number; title: string; valor: number; image: string;}
 interface ProductoCardProps {
   producto: Producto;
 }

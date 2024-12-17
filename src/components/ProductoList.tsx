@@ -1,8 +1,8 @@
 import React from "react";
-import { Producto } from "../types/Producto";
 import ProductoCard from "./ProductoCard";
 import styles from '../styles/Home.module.css';
 
+export interface Producto { id: number; title: string; valor: number; image: string;}
 interface ProductoListProps {
   productos: Producto[];
 }
