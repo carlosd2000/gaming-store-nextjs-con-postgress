@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import Image from 'next/image';
 import Swal from 'sweetalert2';
 import logo from '../../public/assets/img/logo.png'; // Ruta relativa al archivo actual
-import "../styles/ayuda.css"; // Importa los estilos específicos de ayuda
+//import "../styles/ayuda.css"; // Importa los estilos específicos de ayuda
 
 const Ayuda: React.FC = () => {
   const router = useRouter();

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Swal from 'sweetalert2';
 import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
+//import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const Home: React.FC = () => {
   const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false);

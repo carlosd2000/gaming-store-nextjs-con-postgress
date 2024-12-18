@@ -1,6 +1,6 @@
 import React from 'react';
 import Swal from 'sweetalert2';
-import "../styles/login.css";
+//import "../styles/login.css";
 
 const Login: React.FC = () => {
 

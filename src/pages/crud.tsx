@@ -1,6 +1,6 @@
 import React from 'react';
 import UserManager from '../components/UserManager';
-import "../styles/crud.css"; // Importa el archivo CSS desde src/styles/crud.css
+//import "../styles/crud.css"; // Importa el archivo CSS desde src/styles/crud.css
 
 const CrudPage: React.FC = () => {
   return (

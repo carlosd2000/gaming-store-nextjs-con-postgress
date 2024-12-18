@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import Image from 'next/image';
 import logo from '../../public/assets/img/logo.png'; // Ruta relativa al archivo actual
 import equipo from '../../public/assets/img/Equipo.jpg'; // Importar la imagen correctamente
-import "../styles/conocenos.css"; // Importar los estilos específicos
+//import "../styles/conocenos.css"; // Importar los estilos específicos
 
 const Conocenos: React.FC = () => {
   const router = useRouter();
