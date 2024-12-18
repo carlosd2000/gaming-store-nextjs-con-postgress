@@ -40,7 +40,6 @@ const Login: React.FC = () => {
       <meta charSet="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Iniciar Sesión - Nexus Gaming Store</title>
-      <link rel="stylesheet" href="../styles/login.css" />
       <link rel="icon" href="/assets/img/logo.png" />
       <nav className="navbar">
         <div className="logo-container">
